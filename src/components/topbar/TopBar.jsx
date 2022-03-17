@@ -56,7 +56,7 @@ const TopBar = () => {
         <div className="container-fluid  ">
           <img src={logo} class="navimg" />
           <a className="navbar-brand mx-auto text-white ">
-            Algoders <div className="d-none d-sm-inline"> Community</div>
+            Algoders
           </a>
           <button
             className="navbar-toggler bg-light text-white"
@@ -94,7 +94,11 @@ const TopBar = () => {
                   Blogs
                 </Link>
               </li>
-
+              <li className="topListItem nav-item my-2 fw-bold">
+                <Link to="/blogs" className="link">
+                  Quizzes
+                </Link>
+              </li>
               {console.log(user)}
               {user && user.others.role === "admin" && (
                 <li className="topListItem">
